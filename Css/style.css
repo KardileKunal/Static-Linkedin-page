@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root{
+    --hover-color:rgb(227, 224, 224);
+    --theme-color:gray;
+}
+
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif,'Poppins';
+}
+
+body{
+    background: rgb(235, 235, 235);
+}
+
