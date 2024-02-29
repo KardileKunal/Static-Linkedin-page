@@ -1,7 +1,8 @@
 
 /* NavBar CSS Style */
 
-nav .wrapper{
+/* Using flex property to make NavBar */
+nav .allnavbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,27 +10,28 @@ nav .wrapper{
     gap: 1rem;
     padding: 0.5rem 4rem;
 }
-nav .wrapper .leftnav,
-nav .wrapper .rightnav{
+nav .allnavbar .leftnav,
+nav .allnavbar .rightnav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1.5rem;
 }
 
-nav .wrapper .leftnav{
+/* left Side of NavBar  */
+ .leftnav{
     padding-left: 5rem;
     display: flex;
     gap: 0.6rem;
 }
 
-nav .wrapper .logo i{
+ .logo i{
     font-size: 2.5rem;
     cursor: pointer;
     color: #0a66ca;
 }
 
-nav .wrapper .leftnav .search{
+ .leftnav .search{
     background: rgb(230, 238, 240);
     width: 100%;
     padding: 0.5rem 0.8rem;
@@ -39,45 +41,47 @@ nav .wrapper .leftnav .search{
     border-radius: 0.2rem;
 }
 
-nav .wrapper .leftnav .search input[type='search']{
+ .leftnav .search input[type='search']{
     background: transparent;
     border: none;
     width: 14rem;
     
 }
 
-nav .wrapper .leftnav .search input[type='search']::placeholder{
+ .leftnav .search input[type='search']::placeholder{
     font-size: 0.9rem;
     font-weight: 100;
     color: rgb(49, 49, 49);
 }
 
-nav .wrapper .leftnav .search i{
+ .leftnav .search i{
     font-size: 0.95rem;
     color: var(--theme-color);
 }
 
-nav .wrapper .rightnav{
+/* Right Side of NavBar */
+
+ .rightnav{
     padding-right: 5rem;
     display: flex;
-    gap: 2rem;
+    gap: 1.8rem;
 }
 
-nav .wrapper .rightnav .home i,
-nav .wrapper .rightnav .network i,
-nav .wrapper .rightnav .jobs i,
-nav .wrapper .rightnav .messaging i,
-nav .wrapper .rightnav .notification i{
+ .rig
+ .rightnav .network i,
+ .rightnav .jobs i,
+ .rightnav .messaging i,
+ .rightnav .notification i{
     font-size: 1.3rem;
     
 }
 
-nav .wrapper .rightnav .home ,
-nav .wrapper .rightnav .network ,
-nav .wrapper .rightnav .jobs ,
-nav .wrapper .rightnav .messaging ,
-nav .wrapper .rightnav .notification,
-nav .wrapper .rightnav .me{
+ .rightnav .home ,
+ .rightnav .network ,
+ .rightnav .jobs ,
+ .rightnav .messaging ,
+ .rightnav .notification,
+ .rightnav .me{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,24 +90,29 @@ nav .wrapper .rightnav .me{
     cursor: pointer;
 }
 
-nav .wrapper .rightnav .network ,
-nav .wrapper .rightnav .jobs ,
-nav .wrapper .rightnav .messaging ,
-nav .wrapper .rightnav .notification,
-nav .wrapper .rightnav .me i:first-child{
+ .network ,
+ .jobs ,
+ .messaging ,
+ .notification,
+ .me i:first-child{
     color: var(--theme-color);   
 }
 
-nav .wrapper .rightnav .home ,
-nav .wrapper .rightnav .network:hover ,
-nav .wrapper .rightnav .jobs:hover ,
-nav .wrapper .rightnav .messaging:hover ,
-nav .wrapper .rightnav .notification:hover,
-nav .wrapper .rightnav .me .down:hover {
+ .home ,
+ .network:hover ,
+ .jobs:hover ,
+ .messaging:hover ,
+ .notification:hover,
+ .me .down:hover {
     color: black;
 }
 
-nav .wrapper .rightnav .me .down{
+.notification{
+    border-right: 1px solid rgb(52, 49, 49);
+    padding-right: 1rem;
+}
+
+.rightnav .me .down{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,7 +120,7 @@ nav .wrapper .rightnav .me .down{
     color: var(--theme-color);
 }
 
-nav .wrapper .rightnav .me i:first-child{
+.rightnav .me i:first-child{
     background: var(--theme-color);
     color: #fff;
     display: flex;
@@ -123,16 +132,16 @@ nav .wrapper .rightnav .me i:first-child{
     font-size: 1rem;
 }
 
-.wrapper a{
+.allnavbar a{
         text-decoration: none;
         font-size: 0.76rem;
-        width: 7rem;
+        width: 8rem;
         text-align: center;
         cursor: pointer;
         color: rgb(79, 47, 47);
 }
 
-.wrapper a:hover{
+.allnavbar a:hover{
     text-decoration: underline;
 }
 
