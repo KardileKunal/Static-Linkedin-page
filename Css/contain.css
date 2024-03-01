@@ -26,6 +26,7 @@ aside .leftside_col1{
     height: 8vh;
     position: absolute;
     background-color: rgb(166, 178, 192);
+    background-image: linear-gradient(to bottom right, #cd1a47,#aa2e68,#c09022c2,#06e5f5);
 
 }
 
@@ -203,9 +204,8 @@ aside .leftside_col2 .recent_block{
     overflow: hidden;
 }
 
-aside .leftside_col2 .recent_block .recent h6,
-aside .leftside_col2 .group_block .group h6,
-aside .leftside_col2 .followed_block .follow h6{
+.recent h6,
+.recent_bl1 h6{
     margin: 0.5rem 0 0.3rem 1rem;
     font-size: 0.85rem;
     font-weight: 100;
@@ -225,13 +225,11 @@ aside .leftside_col2 .recent_block .recent_b_text:hover{
     background-color: var(--hover-color);
 }
 
-aside .leftside_col2 .group_block .group h6,
-aside .leftside_col2 .followed_block .follow h6{
+.recent_bl1 h6{
     color: blue;
 }
 
-aside .leftside_col2 .group_block .group h6:hover,
-aside .leftside_col2 .followed_block .follow h6:hover{
+.recent_bl1 h6:hover{
     text-decoration: underline;
 }
 /* side bar second column end here */
